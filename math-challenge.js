@@ -2,6 +2,7 @@
 
 // test function to prepare us for html page.
 
+var formEl = document.getElementById('answer-form');
 var banana = 3;
 var wizardHat = 5;
 
@@ -9,15 +10,21 @@ var broom = wizardHat;
 var peel = banana;
 
 function riddleMeThis(x ,y){
-  var number = x + y;
-  return number;
+  if ( x < 20){
+    var number = x + y;
+    return number;
+  }else if( x === 2){
+    var number = x * y;
+    return number;
+  }else if(y === x){
+    var number = x / y;
+    return number;
+  }else{
+    return banana;
+  }
 }
 
-var broom = wizardHat;
-var peel = banana;
 var answerToRiddle = riddleMeThis(broom, peel );
-
-var formEl = document.getElementById('answer-form');
 
 formEl.addEventListener('submit', checkAnswer);
 

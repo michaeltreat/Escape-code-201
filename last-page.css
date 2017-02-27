@@ -27,7 +27,9 @@ main {
   height: 135px;
 
 }
-
+code{
+  border: 5px solid black;
+}
 h4{
   text-align: center;
   margin-bottom: 5%;

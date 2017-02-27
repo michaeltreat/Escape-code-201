@@ -1,0 +1,71 @@
+/*make sure assets folder is in the same directory as index.html, style.css, and app.js.  Rename as necessary*/
+
+* {
+  margin: 0px;
+}
+
+header img {
+  height: 135px;
+  /*width: 2000px;*/
+}
+
+header {
+  height: 135px;
+  position: fixed;
+}
+
+main {
+  /*background-image: url(assets/escapeBackground.jpg);*/
+  background-color: black;
+  background-size: 100%;
+  width: 100%;
+  height: 1200px;
+}
+
+/*space behind title bar*/
+#pagebreak {
+  height: 135px;
+
+}
+body{
+  color: white;
+  background-color: black;
+}
+h2 , p{
+  text-align: center;
+  margin-bottom: 5%;
+  padding-top: 1%;
+  color: white;
+  max-width: 50%;
+  margin: auto;
+
+}
+#riddle-container p{
+  border: 3px solid white;
+  margin-bottom: 10px;
+  margin-top: 1%;
+
+}
+#code-container{
+  margin:auto;
+  border: 3px solid white;
+  min-width: 210px;
+  max-width: 210px;
+
+}
+fieldset{
+  border: 3px solid white;
+  padding: 1%;
+}
+form{
+  margin: auto;
+  text-align: center;
+  min-width: 210px;
+  max-width: 210px;
+}
+/*fieldset{
+  max-width: 408px;
+  max-height: 287px;
+  min-width: 408px;
+  min-height: 287px;
+}*/
