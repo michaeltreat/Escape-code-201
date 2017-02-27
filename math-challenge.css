@@ -28,8 +28,10 @@ main {
 
 }
 body{
+  font-family: 'Shadows Into Light', cursive;
   color: white;
   background-color: black;
+
 }
 h2 , p{
   text-align: center;
@@ -63,9 +65,3 @@ form{
   min-width: 210px;
   max-width: 210px;
 }
-/*fieldset{
-  max-width: 408px;
-  max-height: 287px;
-  min-width: 408px;
-  min-height: 287px;
-}*/

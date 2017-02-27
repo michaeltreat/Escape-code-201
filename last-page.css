@@ -27,6 +27,9 @@ main {
   height: 135px;
 
 }
+body{
+  font-family: 'Shadows Into Light', cursive;
+}
 code{
   border: 5px solid black;
 }
