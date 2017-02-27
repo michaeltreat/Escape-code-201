@@ -5,7 +5,7 @@
 var x = 3;
 var y = 5;
 
-function answer(x ,y){
+function riddleMeThis(x ,y){
   var number = x + y;
   return number;
 }
