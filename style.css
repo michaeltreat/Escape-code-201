@@ -1,0 +1,36 @@
+/*make sure assets folder is in the same directory as index.html, style.css, and app.js.  Rename as necessary*/
+
+* {
+  min-width: 960px;
+  margin: 0px;
+}
+
+header img {
+  height: 135px;
+}
+
+header {
+  height: 135px;
+  position: fixed;
+}
+
+main {
+  /*background-image: url(assets/escapeBackground.jpg);*/
+  background-color: black;
+  background-size: 100%;
+  width: 100%;
+  height: 1200px;
+}
+
+footer {
+  background-color: black;
+}
+
+/*space behind title bar*/
+#pagebreak {
+  height: 135px;
+}
+
+#hiddenLink {
+  font-size: 25px;
+}
