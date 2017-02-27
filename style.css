@@ -1,12 +1,13 @@
 /*make sure assets folder is in the same directory as index.html, style.css, and app.js.  Rename as necessary*/
 
 * {
+
+  min-width: 960px;
   margin: 0px;
 }
 
 header img {
   height: 135px;
-  /*width: 2000px;*/
 }
 
 header {
@@ -22,11 +23,37 @@ main {
   height: 1200px;
 }
 
+footer {
+  background-color: black;
+}
+
 /*space behind title bar*/
 #pagebreak {
   height: 135px;
-
 }
-*{
+
+#objective {
+  font-family: 'Shadows Into Light', cursive;
   color: white;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 150px;
+}
+
+#clickMe {
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+#hiddenLink {
+  font-size: 25px;
+}
+
+a {
+  color: black;
+  background-color: inherit;
+
 }
