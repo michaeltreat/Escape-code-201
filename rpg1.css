@@ -36,10 +36,22 @@ main {
 }
 
 #question {
+  font-size: 70px;
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+  padding-top: 80px;
   color: white;
  }
 
-ol {
+#possibleAnswers {
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  text-align: center;
+  list-style: none;
+}
+
+.ul {
   margin-left: 50px;
 }
 
