@@ -34,15 +34,36 @@ main img{
   border: 3px solid white;
   border-radius: 10px;
   float: left;
+  margin: 20px;
 }
 main{
   color: white;
 }
-
+main p{
+  font-family: 'Shadows Into Light', cursive;
+}
 h2{
   margin-bottom: 5%;
-  padding-top: 1%;
+  /*padding-top: 1%;*/
   max-width: 50%;
   text-align: center;
-  margin: auto;
+}
+.about-us-header{
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  font-family: 'Shadows Into Light', cursive;
+}
+.one{
+  margin: 25px;
+}
+
+.two{
+  margin: 25px;
+}
+.three{
+  margin: 25px;
+}
+.four{
+  margin: 25px;
 }
