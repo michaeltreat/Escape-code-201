@@ -27,36 +27,45 @@ main {
   height: 135px;
 
 }
-code{
-  border: 5px solid black;
+body{
+  color: white;
+  background-color: black;
 }
-h4{
+h2 , p{
   text-align: center;
   margin-bottom: 5%;
-  padding-top: 5%;
+  padding-top: 1%;
   color: white;
-}
+  max-width: 50%;
+  margin: auto;
 
-form{
-  text-align: center;
-  margin-left: 15%;
-  color: white;
+}
+#riddle-container p{
+  border: 3px solid white;
+  margin-bottom: 10px;
+  margin-top: 1%;
+
+}
+#code-container{
+  margin:auto;
+  border: 3px solid white;
+  min-width: 210px;
+  max-width: 210px;
+
 }
 fieldset{
+  border: 3px solid white;
+  padding: 1%;
+}
+form{
+  margin: auto;
+  text-align: center;
+  min-width: 210px;
+  max-width: 210px;
+}
+/*fieldset{
   max-width: 408px;
   max-height: 287px;
   min-width: 408px;
   min-height: 287px;
-}
-
-.image{
-  float: right;
-  margin-right: 15%;
-  margin-left: 3%;
-  max-width: 408px;
-  max-height: 287px;
-  min-width: 408px;
-  min-height: 287px;
-  padding-top: 9px;
-  padding-bottom: -3px;
-}
+}*/
