@@ -22,6 +22,10 @@ main {
   height: 1200px;
 }
 
+.mainContent {
+  color: white;
+}
+
 footer {
   background-color: black;
 }
