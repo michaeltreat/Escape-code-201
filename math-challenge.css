@@ -47,40 +47,43 @@ body p{
   margin-bottom: 5%;
   padding-top: 1%;
   color: white;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   display: block;
 
 }
-/*#riddle-container, #code-container, .form{
+
+#riddle-container, #code-container{
   display: inline-block;
-}*/
+}
 #riddle-container{
   border: 3px solid white;
-  margin-bottom: 10px;
-  margin-top: 1%;
   width: 50%;
+  height: auto;
+  float: left;
+  margin-left: 5%;
+  width: 75%;
 }
 #riddle{
   width: 100%;
 }
-.all-stuff div{
-  display: inline-block;
-}
 #code-container{
-  margin:auto;
   border: 3px solid white;
-  min-width: 210px;
-  max-width: 210px;
-
+  width: 15%;
+  float: right;
+  margin-right: 3%;
+}
+.all-stuff{
+object-fit: fill;
 }
 form{
   margin: auto;
   text-align: center;
-  min-width: 210px;
-  max-width: 210px;
+  max-width: 90%;
+  margin-top: 10%;
 }
 fieldset{
   border: 3px solid white;
   padding: 1%;
+  width: 100%;
 }

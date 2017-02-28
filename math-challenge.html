@@ -22,36 +22,33 @@
     <p>1/2 of 4 = 3 <br>1/3 of 18 = 7 <br> 1/4 of 16 = 5 <br> 1/5 of 10 = VAR X? </p> <!-- var x = 3 -->
     <p>-----------------------</p>
     <p id="riddle">10 people stand in a circle in order 1 to 10. No. 1 has a CSS sword. He kills the next person (i.e. No. 2) and gives the sword to the next living person (i.e. No. 3). All people do the same until only 1 survives. Which unlucky person is stuck alive with the CSS Sword?
-<br>Answer = VAR Y?</p> <!-- var y = 5 -->
+<br>Answer = VAR Y?</p><br><br> <!-- var y = 5 -->
 </div>
   <div id='code-container'>
     <code>
       function riddleMeThis(x ,y){ <br><br>
         &nbsp  if ( x < 20){<br>
           &nbsp  &nbsp var number = x + y;<br>
-          &nbsp  &nbsp  return number;<br><br>
+          &nbsp  &nbsp  return number;<br>
         &nbsp  }else if( x === 2){<br>
         &nbsp    &nbsp  var number = x * y;<br>
-        &nbsp    &nbsp  return number;<br><br>
-        &nbsp  }else if(y === x){<br>
-        &nbsp    &nbsp  var number = x / y;<br>
-        &nbsp      &nbspreturn number;<br><br>
+        &nbsp    &nbsp  return number;<br>
         &nbsp  }else{<br>
         &nbsp    &nbsp  return banana;<br>
         &nbsp  }<br>
-       }<br>
+      }<br><br>
     </code>
   </div>
-  <div class="form">
-    <form id="answer-form">
-      <fieldset>
-        <legend>Escape Code</legend><br>
-        <label for="userInput">riddleMeThis :</label><br>
-        <input type="text" name="userInput" id= "userInput"><br><br>
-        <button type="submit" >SUBMIT</button> <br>
-      </fieldset>
-    </form>
-  </div>
+</div>
+<div class="form">
+  <form id="answer-form">
+    <fieldset>
+      <legend>Escape Code</legend><br>
+      <label for="userInput">riddleMeThis :</label><br>
+      <input type="text" name="userInput" id= "userInput"><br><br>
+      <button type="submit" >SUBMIT</button> <br>
+    </fieldset>
+  </form>
 </div>
     <script src="local-storage.js"></script>
     <script src="math-challenge.js"> </script>
