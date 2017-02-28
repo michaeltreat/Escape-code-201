@@ -42,16 +42,15 @@ main{
 main p{
   font-family: 'Shadows Into Light', cursive;
 }
-h2{
-  margin-bottom: 5%;
+h1{
+  margin-bottom: 0px;
   /*padding-top: 1%;*/
   max-width: 50%;
-  text-align: center;
+  text-align: right;
 }
 .about-us-header{
   padding: 10px;
-  margin-bottom: 25px;
-  margin-top: 50px;
+  margin-bottom: 15px;
   font-family: 'Shadows Into Light', cursive;
 }
 .one{
