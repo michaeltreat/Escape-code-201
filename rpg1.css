@@ -68,3 +68,8 @@ footer {
 #hiddenLink {
   font-size: 25px;
 }
+
+.image {
+  display: inline;
+  width: 300px;
+}

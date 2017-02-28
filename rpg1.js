@@ -38,9 +38,10 @@ var answerThreeIncorrectTwo = '333333 incorrect answer two33333';
 
 // Question Four Variable
 var questionFour = 'Question Four';
-var answerFourPicOne = 'image2.jpg';
-var answerFourPicTwo = 'image3.jpg';
-var answerFourPicThree = 'image4.jpg';
+var answerFour = 'answer four';
+var answerFourPicOne = 'assets/hellokitty.jpg';
+var answerFourPicTwo = 'assets/hellokitty.jpg';
+var answerFourPicThree = 'assets/hellokitty.jpg';
 
 // total questions wrong and messages
 
@@ -66,6 +67,8 @@ function handleClick(event) {
   } else if (event.target.id === 'correctAnswerTwo') {
     questionThreeEl();
   } else if (event.target.id === 'correctAnswerThree') {
+    questionFourEl();
+  } else if (event.target.id === 'correctAnswerFour') {
     questionsWrong();
     location.href = pageLink;
   } else {
@@ -158,36 +161,42 @@ var questionThreeEl = function() {
 
 };
 
-//  Question Four
-//
-// var questionFourEl = function() {
-//   var questionEl = document.getElementById('question');
-//   question.textContent = questionThree;
-//
-//   var questionFourAnswerOneEl = document.getElementById('incorrectAnswerTwo');
-//   questionFourAnswerOneEl.setAttribute('src', 'image1.image');
-//   answerEl.appendChild(questionFourAnswerOneEl);
-//   questionFourAnswerOneEl.textContent = answerThreeIncorrectOne;
-//   questionFourAnswerOneEl.addEventListener('click', handleClick);
-//
-//   console.log(incorrectNumber);
-//
-//   var questionFourAnswerTwoEl = document.getElementById('incorrectAnswerOne');
-//   questionFourAnswerTwoEl.setAttribute('src', 'image2.jpg');
-//   answerEl.appendChild(questionFourAnswerTwoEl);
-//   questionFourAnswerTwoEl.textContent = answerThreeIncorrectTwo;
-//   questionFourAnswerTwoEl.addEventListener('click', handleClick);
-//
-//   console.log(incorrectNumber);
-//
-//   var questionFourAnswerThreeEl = document.getElementById('correctAnswerTwo');
-//   questionFourAnswerThreeEl.setAttribute('id', 'correctAnswerThree');
-//   answerEl.appendChild(questionFourAnswerThreeEl);
-//   questionFourAnswerThreeEl.textContent = answerThree;
-//   questionFourAnswerThreeEl.addEventListener('click', handleClick);
-//
-//   console.log(incorrectNumber);
-//
-// };
+ // Question Four
+
+var questionFourEl = function() {
+  var questionEl = document.getElementById('question');
+  question.textContent = questionFour;
+
+  var questionFourAnswerOneEl = document.createElement('img');
+  document.getElementById('incorrectAnswerTwo').remove();
+  questionFourAnswerOneEl.setAttribute('src', answerFourPicOne);
+  questionFourAnswerOneEl.setAttribute('class', 'image');
+  answerEl.appendChild(questionFourAnswerOneEl);
+  questionFourAnswerOneEl.textContent = answerThreeIncorrectOne;
+  questionFourAnswerOneEl.addEventListener('click', handleClick);
+
+  console.log(incorrectNumber);
+
+  var questionFourAnswerTwoEl = document.createElement('img');
+  document.getElementById('incorrectAnswerOne').remove();
+  questionFourAnswerTwoEl.setAttribute('src', answerFourPicTwo);
+  questionFourAnswerTwoEl.setAttribute('class', 'image');
+  answerEl.appendChild(questionFourAnswerTwoEl);
+  questionFourAnswerTwoEl.textContent = answerThreeIncorrectTwo;
+  questionFourAnswerTwoEl.addEventListener('click', handleClick);
+
+  console.log(incorrectNumber);
+
+  var questionFourAnswerThreeEl = document.createElement('img');
+  document.getElementById('correctAnswerThree').remove();
+  questionFourAnswerThreeEl.setAttribute('src', answerFourPicThree);
+  questionFourAnswerThreeEl.setAttribute('class', 'image');
+  answerEl.appendChild(questionFourAnswerThreeEl);
+  questionFourAnswerThreeEl.textContent = answerFour;
+  questionFourAnswerThreeEl.addEventListener('click', handleClick);
+
+  console.log(incorrectNumber);
+
+};
 
 questionOneEl();
