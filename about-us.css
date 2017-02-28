@@ -41,6 +41,7 @@ main{
 }
 main p{
   font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
 }
 h1{
   margin-bottom: 0px;
@@ -48,21 +49,22 @@ h1{
   max-width: 50%;
   text-align: right;
 }
+
 .about-us-header{
-  padding: 10px;
-  margin-bottom: 15px;
   font-family: 'Shadows Into Light', cursive;
 }
 .one{
-  margin: 25px;
+float: left;
 }
-
 .two{
-  margin: 25px;
+  float: left;
 }
 .three{
-  margin: 25px;
+  float: left;
 }
 .four{
-  margin: 25px;
+  float: left;
+}
+.five{
+  float: left;
 }
