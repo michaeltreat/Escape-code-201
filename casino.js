@@ -58,7 +58,7 @@ function handleClick(event){
     var paragraghEl = document.getElementById('win');
     var winMessage = alert('YOU WIN! You spent $' + (leverClicks * 100) + ' dollars and all you got was this link...ouch');
     paragraghEl.textContent = winMessage;
-    location.href = 'rpg1.html';
+    location.href = 'last-page.html';
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
   }else {
     drawThree();
