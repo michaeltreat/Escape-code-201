@@ -54,7 +54,7 @@ function handleClick(event){
   leverClicks++;
   console.log(leverClicks);
   drawThree();
-  if (slotLeft === slotRight && slotLeft === slotCenter) {
+  if (slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter) {
     var paragraghEl = document.getElementById('win');
     var winMessage = alert('YOU WIN! You spent $' + (leverClicks * 100) + ' dollars and all you got was this link...ouch');
     paragraghEl.textContent = winMessage;
