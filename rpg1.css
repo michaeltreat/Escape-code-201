@@ -49,6 +49,7 @@ main {
   font-size: 50px;
   text-align: center;
   list-style: none;
+  cursor: pointer;
 }
 
 .ul {
