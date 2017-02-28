@@ -56,9 +56,9 @@ function handleClick(event){
   drawThree();
   if (slotLeft === slotRight && slotLeft === slotCenter) {
     var paragraghEl = document.getElementById('win');
-    var winMessage = alert('you win! you spent ' + (leverClicks * 100) + ' dollars and all you got was this link...ouch');
+    var winMessage = alert('YOU WIN! You spent $' + (leverClicks * 100) + ' dollars and all you got was this link...ouch');
     paragraghEl.textContent = winMessage;
-    //location.href = 'rpg1.html';
+    location.href = 'rpg1.html';
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
   }else {
     drawThree();
