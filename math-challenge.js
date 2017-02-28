@@ -35,7 +35,7 @@ function checkAnswer(event){
   var userInput = parseInt(formEl.userInput.value);
   console.log(userInput);
   if( userInput === answerToRiddle){
-    location.href = 'index.html'; // place-holder
+    location.href = 'rpg1.html'; // place-holder
   }else {
     alert('incorrect');
   };
