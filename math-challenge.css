@@ -47,15 +47,25 @@ body p{
   margin-bottom: 5%;
   padding-top: 1%;
   color: white;
-  max-width: 25%;
+  max-width: 80%;
   margin: auto;
+  display: block;
 
 }
-#riddle-container p{
+/*#riddle-container, #code-container, .form{
+  display: inline-block;
+}*/
+#riddle-container{
   border: 3px solid white;
   margin-bottom: 10px;
   margin-top: 1%;
-
+  width: 50%;
+}
+#riddle{
+  width: 100%;
+}
+.all-stuff div{
+  display: inline-block;
 }
 #code-container{
   margin:auto;
@@ -64,13 +74,13 @@ body p{
   max-width: 210px;
 
 }
-fieldset{
-  border: 3px solid white;
-  padding: 1%;
-}
 form{
   margin: auto;
   text-align: center;
   min-width: 210px;
   max-width: 210px;
+}
+fieldset{
+  border: 3px solid white;
+  padding: 1%;
 }
