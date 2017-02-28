@@ -18,11 +18,17 @@ var answerOne = 'to count things';
 var answerOneIncorrectOne = 'testing321';
 var answerOneIncorrectTwo = 'testing123';
 
+<<<<<<< HEAD
 // Question Two Variables
 var questionTwo = 'What is the meaning of life?';
 var answerTwo = 'something stupid';
 
 // Question Three Variable
+=======
+var questionTwo = 'What is the meaning of life?';
+var answerTwo = 'something stupid';
+
+>>>>>>> b15cce57f2dd1791f798aee8f1ace087ce5c9a0f
 var questionThree = '';
 var answerThree = 'your mom';
 
@@ -31,11 +37,16 @@ function handleClick(event) {
   event.preventDefault();
   event.stopPropagation();
 
+<<<<<<< HEAD
   console.log(event.target);
 
   if (event.target.id === 'correctAnswer') {
     questionTwoEl();
   }
+=======
+  if (event.target.parentNode.id = 'correctAnswer');
+
+>>>>>>> b15cce57f2dd1791f798aee8f1ace087ce5c9a0f
 };
 
 // Question One
@@ -81,4 +92,9 @@ var questionThreeEl = function() {
   question.textContent = questionTwo;
 };
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b15cce57f2dd1791f798aee8f1ace087ce5c9a0f
 questionOneEl();
