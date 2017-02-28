@@ -8,6 +8,6 @@ formEl.addEventListener('submit', sendToNextPage);
 function sendToNextPage(event) {
   event.stopPropagation();
   event.preventDefault();
-  location.href = 'index.html';
+  location.href = 'about-us.html';
   // location.href = 'about.html';
 }
