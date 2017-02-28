@@ -1,3 +1,7 @@
+#leverSection{
+  display: inline-block;
+}
+
 #lever {
   padding-top: 100px;
   width: 50%;
