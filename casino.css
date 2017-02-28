@@ -1,0 +1,42 @@
+#leverSection{
+  display: inline-block;
+}
+
+#lever {
+  padding-top: 100px;
+  width: 50%;
+}
+
+#SlotContainer {
+  margin-left: 400px;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  background-image: url(slotpics/slotmachineback.jpg);
+  display: inline-block;
+  padding: 0;
+}
+
+#left{
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top: 130px;
+  height: 100px;
+  width: 100px;
+
+
+}
+
+#right{
+  margin-left: 20px;
+  margin-right: 30px;
+  height: 100px;
+  width: 100px;
+}
+
+#center{
+  margin-right: 60px;
+  margin-left: 40px;
+  height: 100px;
+  width: 100px;
+}
