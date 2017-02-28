@@ -11,7 +11,10 @@
 //   userName = prompt('Hmmmm looks like we forgot your name. What was it again?');
 //   localStorage.userName = userName;
 // };
-var incorrectNumber = 0;
+
+var pageLink = 'casino.html'; //insert link for quiz completion
+
+var incorrectNumber = 0; //number of incorrect answers
 
 var answerEl = document.getElementById('possibleAnswers'); //correct answer for event listener
 
@@ -32,6 +35,12 @@ var questionThree = 'Question Three';
 var answerThree = 'your mom';
 var answerThreeIncorrectOne = '333333 incorrect answer one33333';
 var answerThreeIncorrectTwo = '333333 incorrect answer two33333';
+
+// Question Four Variable
+var questionFour = 'Question Four';
+var answerFourPicOne = 'image2.jpg';
+var answerFourPicTwo = 'image3.jpg';
+var answerFourPicThree = 'image4.jpg';
 
 // total questions wrong and messages
 
@@ -58,7 +67,7 @@ function handleClick(event) {
     questionThreeEl();
   } else if (event.target.id === 'correctAnswerThree') {
     questionsWrong();
-    location.href = 'index.html';
+    location.href = pageLink;
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
@@ -148,5 +157,37 @@ var questionThreeEl = function() {
   console.log(incorrectNumber);
 
 };
+
+//  Question Four
+//
+// var questionFourEl = function() {
+//   var questionEl = document.getElementById('question');
+//   question.textContent = questionThree;
+//
+//   var questionFourAnswerOneEl = document.getElementById('incorrectAnswerTwo');
+//   questionFourAnswerOneEl.setAttribute('src', 'image1.image');
+//   answerEl.appendChild(questionFourAnswerOneEl);
+//   questionFourAnswerOneEl.textContent = answerThreeIncorrectOne;
+//   questionFourAnswerOneEl.addEventListener('click', handleClick);
+//
+//   console.log(incorrectNumber);
+//
+//   var questionFourAnswerTwoEl = document.getElementById('incorrectAnswerOne');
+//   questionFourAnswerTwoEl.setAttribute('src', 'image2.jpg');
+//   answerEl.appendChild(questionFourAnswerTwoEl);
+//   questionFourAnswerTwoEl.textContent = answerThreeIncorrectTwo;
+//   questionFourAnswerTwoEl.addEventListener('click', handleClick);
+//
+//   console.log(incorrectNumber);
+//
+//   var questionFourAnswerThreeEl = document.getElementById('correctAnswerTwo');
+//   questionFourAnswerThreeEl.setAttribute('id', 'correctAnswerThree');
+//   answerEl.appendChild(questionFourAnswerThreeEl);
+//   questionFourAnswerThreeEl.textContent = answerThree;
+//   questionFourAnswerThreeEl.addEventListener('click', handleClick);
+//
+//   console.log(incorrectNumber);
+//
+// };
 
 questionOneEl();
