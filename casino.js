@@ -21,7 +21,7 @@ function slotPic (slotPath, name){
   this.slotPath = slotPath;
   this.name = name;
 
-}
+};
 
 //Slot machine pictures
 var slotCherry = new slotPic('slotpics/cherry.png', 'Cherry');
@@ -56,14 +56,15 @@ function drawThree(){
 
   var rightSlot = slotMachinePics[slotRight];
   right.setAttribute('src',rightSlot.slotPath);
-}
+};
+
 function handleClick(event){
   leverClicks++;
   console.log(leverClicks);
   drawThree();
-  if (slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter) {
+  if (slotLeft === 0 && slotCenter === 0 && slotRight === 0) {
     var paragraghEl = document.getElementById('win');
-    var winMessage = 'You Win! ' + userName + ', you spent ' + (leverClicks * 100) + ' dollars to get this link...ouch.';
+    var winMessage = 'You Win! ' + userName + ', you spent ' + (leverClicks * 76) + ' dollars to get this link...ouch.';
     //local storage
     localStorage.moneySpent = JSON.stringify(leverClicks);
     console.log(localStorage.moneySpent);
@@ -77,8 +78,42 @@ function handleClick(event){
     linkEl.href = 'debugger.html';
     leverEl.removeEventListener('click', handleClick);
     console.log(linkEl);
+    console.log('you win! you spent ' + (leverClicks * 76) + ' dollars');
+  }else if(slotLeft === 1 && slotCenter === 1 && slotRight === 1){
+    var paragraghEl = document.getElementById('win');
+    var winMessageTwo = userName + ', life gave you lemons. And those lemons cost ' + (leverClicks * 76) + ' dollars.';
+    //local storage
+    localStorage.moneySpent = JSON.stringify(leverClicks);
+    console.log(localStorage.moneySpent);
+
+    //paragraph element for win message
+    paragraghEl.textContent = winMessageTwo;
+
+    //a tag element for link to next page
+    var linkEl = document.getElementById('nextLink');
+    linkEl.textContent = 'Next Stage';
+    linkEl.href = 'debugger.html';
+    leverEl.removeEventListener('click', handleClick);
+    console.log(linkEl);
+    console.log('you win! you spent ' + (leverClicks * 76) + ' dollars');
+  }else if(slotLeft === 2 && slotCenter === 2 && slotRight === 2){
+    var paragraghEl = document.getElementById('win');
+    var winMessageThree = userName + ', you shine bright like a diamond. A ' + (leverClicks * 76) + ' dollar diamond.';
+    //local storage
+    localStorage.moneySpent = JSON.stringify(leverClicks);
+    console.log(localStorage.moneySpent);
+
+    //paragraph element for win message
+    paragraghEl.textContent = winMessageThree;
+
+    //a tag element for link to next page
+    var linkEl = document.getElementById('nextLink');
+    linkEl.textContent = 'Next Stage';
+    linkEl.href = 'debugger.html';
+    leverEl.removeEventListener('click', handleClick);
+    console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
   }
-}
+};
 
-//slotLeft === slotMachinePics[0] && slotCenter === slotMachinePics[0] && slotRight === slotMachinePics[0]
+//slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter

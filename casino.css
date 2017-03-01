@@ -35,7 +35,7 @@ main {
 
 #lever {
   padding-top: 100px;
-  width: 30%;
+  width: 50%;
 }
 
 #SlotContainer {
@@ -94,8 +94,9 @@ svg{
 #instruct{
   color: #00F500;
   font-family: monospace;
-  font-size: 18px;
-  padding-top: 100px;
+  font-size: 30px;
+  margin-left: 450px;
+  margin-top: 100px;
 }
 
 #win{
