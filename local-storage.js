@@ -8,5 +8,5 @@ if(localStorage.userName){
   userName = JSON.parse(localStorage.userName);
 }else{
   userName = prompt('Hmmmm looks like we forgot your name. What was it again?');
-  localStorage.userName = userName;
+  localStorage.userName = JSON.stringify(userName);
 };
