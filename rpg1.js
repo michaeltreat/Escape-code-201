@@ -12,35 +12,35 @@
 //   localStorage.userName = userName;
 // };
 
-var pageLink = 'casino.html'; //insert link for quiz completion
+var pageLink = 'rpg1.html'; //insert link for quiz completion
 
 var incorrectNumber = 0; //number of incorrect answers
 
 var answerEl = document.getElementById('possibleAnswers'); //correct answer for event listener
 
 // Question One Variables
-var questionOne = 'What is a "for" loop?';
-var answerOne = 'to count things';
-var answerOneIncorrectOne = 'testing321';
-var answerOneIncorrectTwo = 'testing123';
+var questionOne = 'HTML is considered a _________ language.';
+var answerOne = 'markup';
+var answerOneIncorrectOne = 'foreign';
+var answerOneIncorrectTwo = 'programming';
 
 // Question Two Variables
-var questionTwo = 'What is the meaning of life?';
-var answerTwo = 'answer two';
-var answerTwoIncorrectOne = '22222incorrect answer one22222';
-var answerTwoIncorrectTwo = '222222incorrect answer two22222';
+var questionTwo = 'I want to change to text color of all my elements with a class of myStuff.  I would use...';
+var answerTwo = '.myStuff';
+var answerTwoIncorrectOne = '#myStuff';
+var answerTwoIncorrectTwo = 'class.myStuff';
 
 // Question Three Variable
-var questionThree = 'Question Three';
-var answerThree = 'your mom';
-var answerThreeIncorrectOne = '333333 incorrect answer one33333';
-var answerThreeIncorrectTwo = '333333 incorrect answer two33333';
+var questionThree = 'Why so JavaScript and Java have similar names?';
+var answerThree = 'JavaScript\'s syntax is loosely based on Java\'s';
+var answerThreeIncorrectOne = 'JavaScript is a stripped-down version of Java';
+var answerThreeIncorrectTwo = 'They both originated on the island of Java';
 
 // Question Four Variable
 var questionFour = 'Who is the best TA?';
 var answerFour = 'Who is the best TA?';
-var answerFourPicOne = 'assets/tracey.JPG';
-var answerFourPicTwo = 'assets/frazier.jpg';
+var answerFourPicOne = 'assets/hellokitty.jpg';
+var answerFourPicTwo = 'assets/hellokitty.jpg';
 var answerFourPicThree = 'assets/hellokitty.jpg';
 
 // total questions wrong and messages
@@ -67,8 +67,9 @@ function handleClick(event) {
   } else if (event.target.id === 'correctAnswerTwo') {
     questionThreeEl();
   } else if (event.target.id === 'correctAnswerThree') {
+    confirm('Congratulations. You made it to the final question. The next question is worth all the marbles. Answer carefully...');
     questionFourEl();
-  } else if (event.target.id === 'correctAnswerFour') {
+  } else if (event.target.id === 'image1', 'image2', 'image3') {
     questionsWrong();
     location.href = pageLink;
   } else {
@@ -77,6 +78,8 @@ function handleClick(event) {
     confirm('You got it wrong fool. Pick again');
   }
 };
+
+// for each question, correct and incorrect answers need to be called, and replaced for every question.
 
 // Question One
 var questionOneEl = function() {
@@ -170,7 +173,7 @@ var questionFourEl = function() {
   var questionFourAnswerOneEl = document.createElement('img');
   document.getElementById('incorrectAnswerTwo').remove();
   questionFourAnswerOneEl.setAttribute('src', answerFourPicOne);
-  questionFourAnswerOneEl.setAttribute('class', 'image');
+  questionFourAnswerOneEl.setAttribute('id', 'image1');
   answerEl.appendChild(questionFourAnswerOneEl);
   questionFourAnswerOneEl.textContent = answerThreeIncorrectOne;
   questionFourAnswerOneEl.addEventListener('click', handleClick);
@@ -180,7 +183,7 @@ var questionFourEl = function() {
   var questionFourAnswerTwoEl = document.createElement('img');
   document.getElementById('incorrectAnswerOne').remove();
   questionFourAnswerTwoEl.setAttribute('src', answerFourPicTwo);
-  questionFourAnswerTwoEl.setAttribute('class', 'image');
+  questionFourAnswerTwoEl.setAttribute('id', 'image2');
   answerEl.appendChild(questionFourAnswerTwoEl);
   questionFourAnswerTwoEl.textContent = answerThreeIncorrectTwo;
   questionFourAnswerTwoEl.addEventListener('click', handleClick);
@@ -190,7 +193,7 @@ var questionFourEl = function() {
   var questionFourAnswerThreeEl = document.createElement('img');
   document.getElementById('correctAnswerThree').remove();
   questionFourAnswerThreeEl.setAttribute('src', answerFourPicThree);
-  questionFourAnswerThreeEl.setAttribute('class', 'image');
+  questionFourAnswerThreeEl.setAttribute('id', 'image3');
   answerEl.appendChild(questionFourAnswerThreeEl);
   questionFourAnswerThreeEl.textContent = answerFour;
   questionFourAnswerThreeEl.addEventListener('click', handleClick);
