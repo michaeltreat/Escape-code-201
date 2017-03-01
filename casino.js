@@ -75,7 +75,7 @@ function handleClick(event){
     //a tag element for link to next page
     var linkEl = document.getElementById('nextLink');
     linkEl.textContent = 'Next Stage';
-    linkEl.href = 'debugger.html';
+    linkEl.href = 'last-page.html';
     leverEl.removeEventListener('click', handleClick);
     console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 76) + ' dollars');
@@ -92,7 +92,7 @@ function handleClick(event){
     //a tag element for link to next page
     var linkEl = document.getElementById('nextLink');
     linkEl.textContent = 'Next Stage';
-    linkEl.href = 'debugger.html';
+    linkEl.href = 'last-page.html';
     leverEl.removeEventListener('click', handleClick);
     console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 76) + ' dollars');
@@ -109,7 +109,7 @@ function handleClick(event){
     //a tag element for link to next page
     var linkEl = document.getElementById('nextLink');
     linkEl.textContent = 'Next Stage';
-    linkEl.href = 'debugger.html';
+    linkEl.href = 'last-page.html';
     leverEl.removeEventListener('click', handleClick);
     console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
