@@ -19,6 +19,7 @@ var incorrectNumber = 0; //number of incorrect answers
 var answerEl = document.getElementById('possibleAnswers'); //correct answer for event listener
 
 // Question One Variables
+var questionOneImage = 'assets/hellokitty.jpg';
 var questionOne = 'HTML is considered a _________ language.';
 var answerOne = 'markup';
 var answerOneIncorrectOne = 'foreign';
@@ -86,18 +87,21 @@ function handleClick(event) {
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
-    confirm('You got it wrong fool. Pick again');
+    confirm('You got it wrong! Pick again');
   }
 };
 
-var tester = function() {
+var addPic = function() {
   var imageEl = document.getElementById('firstImage');
+  imageEl.setAttribute('src', 'assets/tracey.JPG');
   imageEl.textContent = 'TESTING';
 };
 
 // correct and incorrect answers need to be called, and replaced (by ID) for every question.
 
 // Question One
+confirm('You wake up... classroom is empty... you need to find a way out of here.');
+
 var questionOneEl = function() {
   var questionEl = document.getElementById('question');
   question.textContent = questionOne;
@@ -125,6 +129,10 @@ var questionOneEl = function() {
 // Question Two
 
 var questionTwoEl = function() {
+  var imageEl = document.getElementById('firstImage');
+  imageEl.setAttribute('src', 'assets/frazierreal.jpg');
+  imageEl.textContent = 'TESTING';
+
   var questionEl = document.getElementById('question');
   question.textContent = questionTwo;
 
@@ -224,8 +232,6 @@ var questionFourEl = function() {
 
 };
 
-tester();
-
-confirm('You wake up... classroom is empty... you need to find a way out of here.');
+addPic();
 
 questionOneEl();
