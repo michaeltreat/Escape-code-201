@@ -23,7 +23,11 @@ main {
   width: 100%;
   height: 1200px;
 }
-
+h1{
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+}
 /*space behind title bar*/
 #pagebreak {
   height: 135px;
@@ -63,12 +67,13 @@ body p{
 #riddle-container{
   border: 3px solid #00F500;;
   width: 50%;
-  height: auto;
   float: left;
   margin-left: 5%;
   width: 75%;
   font-family: monospace;
   color: #00F500;
+  min-height: 270px;
+  max-height: 270px;
 }
 #riddle{
   width: 100%;
@@ -78,6 +83,8 @@ body p{
   width: 15%;
   float: right;
   margin-right: 3%;
+  min-height: 270px;
+  max-height: 270px;
 }
 .all-stuff{
 object-fit: fill;
@@ -86,7 +93,7 @@ form{
   margin: auto;
   text-align: center;
   max-width: 90%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 fieldset{
   border: 3px solid #00F500;;
