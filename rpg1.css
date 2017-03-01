@@ -19,18 +19,11 @@ h1 {
 
 main {
   /*background-image: url(assets/escapeBackground.jpg);*/
+  display: fixed;
   background-color: black;
   background-size: 100%;
   width: 100%;
-  height: 1200px;
-}
-
-.mainContent {
-  font-size: 70px;
-  font-family: 'Shadows Into Light', cursive;
-  text-align: center;
-  padding-top: 80px;
-  color: white;
+  height: 700px;
 }
 
 .listItem {
@@ -39,16 +32,16 @@ main {
 }
 
 #question {
-  font-size: 70px;
-  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
   text-align: center;
   padding-top: 80px;
-  color: white;
  }
 
 #possibleAnswers {
+  font-family: 'Share Tech Mono', monospace;
   color: white;
-  font-family: 'Shadows Into Light', cursive;
   font-size: 50px;
   text-align: center;
   list-style: none;
@@ -72,7 +65,19 @@ footer {
   font-size: 25px;
 }
 
-.image {
+#image1 {
+  margin: 10px;
+  display: inline;
+  width: 300px;
+}
+
+#image2 {
+  margin: 10px;
+  display: inline;
+  width: 300px;
+}
+
+#image3 {
   margin: 10px;
   display: inline;
   width: 300px;
