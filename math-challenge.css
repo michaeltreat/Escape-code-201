@@ -2,6 +2,8 @@
 
 * {
   margin: 0px;
+  font-family: monospace;
+  color: #00F500;
 }
 
 header img {
@@ -28,8 +30,6 @@ main {
 
 }
 body{
-  font-family: 'Shadows Into Light', cursive;
-  color: white;
   background-color: black;
 
 }
@@ -37,38 +37,44 @@ h2 , p{
   text-align: center;
   margin-bottom: 5%;
   padding-top: 1%;
-  color: white;
+  color: #00F500;;
   max-width: 50%;
   margin: auto;
-
+  font-family: monospace;
+  color: #00F500;
 }
 body p{
   text-align: center;
   margin-bottom: 5%;
   padding-top: 1%;
-  color: white;
+  color: #00F500;;
   max-width: 90%;
   margin: auto;
   display: block;
+  font-family: monospace;
+  color: #00F500;
 
 }
+
 
 #riddle-container, #code-container{
   display: inline-block;
 }
 #riddle-container{
-  border: 3px solid white;
+  border: 3px solid #00F500;;
   width: 50%;
   height: auto;
   float: left;
   margin-left: 5%;
   width: 75%;
+  font-family: monospace;
+  color: #00F500;
 }
 #riddle{
   width: 100%;
 }
 #code-container{
-  border: 3px solid white;
+  border: 3px solid #00F500;;
   width: 15%;
   float: right;
   margin-right: 3%;
@@ -83,7 +89,7 @@ form{
   margin-top: 10%;
 }
 fieldset{
-  border: 3px solid white;
+  border: 3px solid #00F500;;
   padding: 1%;
   width: 100%;
 }

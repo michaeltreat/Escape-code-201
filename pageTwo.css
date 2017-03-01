@@ -1,12 +1,11 @@
 /*make sure assets folder is in the same directory as index.html, style.css, and app.js.  Rename as necessary*/
 
 * {
-
   min-width: 960px;
   margin: 0px;
 }
-div p{
-  color: white;
+
+main p{
   font-size: 100px;
   text-align: center;
   padding-top: 20%;
@@ -39,16 +38,16 @@ footer {
 }
 
 #objective {
-  font-family: 'Shadows Into Light', cursive;
-  color: white;
+  font-family: monospace;
+  color: #00F500;
   text-align: center;
   font-size: 35px;
   padding-top: 150px;
 }
 
 #clickMe {
-  font-family: 'Shadows Into Light', cursive;
-  color: white;
+  font-family: monospace;
+  color: #00F500;
   text-align: center;
   font-size: 50px;
   padding-top: 50px;
