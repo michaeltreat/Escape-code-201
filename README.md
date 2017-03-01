@@ -1,3 +1,4 @@
+* CITE: Splashpage credit, https://codepen.io/lbebber/pen/ypgql. Code is readily available on many sites including CSS TRicks. 
 # Escape-code-201
 Project week code 201 - Carlo, Kevin, Saul, Mike
 
