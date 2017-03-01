@@ -43,6 +43,10 @@ function drawThree(){
   slotCenter = randomSpin();
   slotRight = randomSpin();
 
+  console.log('drawThree left ', slotLeft);
+  console.log('drawThree center ', slotCenter);
+  console.log('drawThree right ', slotRight);
+
   //sets img source for img tags
   var leftSlot = slotMachinePics[slotLeft];
   left.setAttribute('src', leftSlot.slotPath);
@@ -57,6 +61,9 @@ function handleClick(event){
   leverClicks++;
   console.log(leverClicks);
   drawThree();
+  console.log('handleClick left ', slotLeft);
+  console.log('handleClick center ', slotCenter);
+  console.log('handleClick right ', slotRight);
   if (slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter) {
     var paragraghEl = document.getElementById('win');
     var winMessage = 'You Win! You spent ' + (leverClicks * 100) + ' dollars to get this link';
@@ -67,10 +74,7 @@ function handleClick(event){
     leverEl.removeEventListener('click', handleClick);
     console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
-  }else {
-    drawThree();
   }
 }
 
-//alert('YOU WIN! You spent $' + (leverClicks * 100) + ' dollars and all you got was this link...ouch');
 //slotLeft === slotMachinePics[0] && slotCenter === slotMachinePics[0] && slotRight === slotMachinePics[0]
