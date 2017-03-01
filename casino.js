@@ -5,11 +5,16 @@ var slotLeft = 0;
 var slotCenter = 0;
 var slotRight = 0;
 
+//stores number of clicks of lever
 var leverClicks = 0;
 
+//element nodes for img tags
 var left = document.getElementById('left');
 var center = document.getElementById('center');
 var right = document.getElementById('right');
+
+var leverEl = document.getElementById('lever');
+leverEl.addEventListener('click', handleClick);
 
 //constructor for slot machine pictures
 function slotPic (slotPath, name){
@@ -22,9 +27,6 @@ function slotPic (slotPath, name){
 var slotCherry = new slotPic('slotpics/cherry.png', 'Cherry');
 var slotLemon = new slotPic('slotpics/lemon.png','Lemon');
 var slotDiamond = new slotPic('slotpics/diamond.png','Lemon');
-
-var leverEl = document.getElementById('lever');
-leverEl.addEventListener('click', handleClick);
 
 //Slot Machine picture array
 var slotMachinePics = [slotCherry,slotLemon,slotDiamond];
@@ -41,6 +43,11 @@ function drawThree(){
   slotCenter = randomSpin();
   slotRight = randomSpin();
 
+  console.log('drawThree left ', slotLeft);
+  console.log('drawThree center ', slotCenter);
+  console.log('drawThree right ', slotRight);
+
+  //sets img source for img tags
   var leftSlot = slotMachinePics[slotLeft];
   left.setAttribute('src', leftSlot.slotPath);
 
@@ -54,13 +61,20 @@ function handleClick(event){
   leverClicks++;
   console.log(leverClicks);
   drawThree();
+  console.log('handleClick left ', slotLeft);
+  console.log('handleClick center ', slotCenter);
+  console.log('handleClick right ', slotRight);
   if (slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter) {
     var paragraghEl = document.getElementById('win');
-    var winMessage = alert('YOU WIN! You spent $' + (leverClicks * 100) + ' dollars and all you got was this link...ouch');
+    var winMessage = 'You Win! You spent ' + (leverClicks * 100) + ' dollars to get this link';
     paragraghEl.textContent = winMessage;
-    location.href = 'last-page.html';
+    var linkEl = document.getElementById('nextLink');
+    linkEl.textContent = 'Next Stage';
+    linkEl.href = 'last-page.html';
+    leverEl.removeEventListener('click', handleClick);
+    console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
-  }else {
-    drawThree();
   }
 }
+
+//slotLeft === slotMachinePics[0] && slotCenter === slotMachinePics[0] && slotRight === slotMachinePics[0]

@@ -35,7 +35,7 @@ main {
 
 #lever {
   padding-top: 100px;
-  width: 50%;
+  width: 30%;
 }
 
 #SlotContainer {
@@ -92,8 +92,22 @@ svg{
 }
 
 #instruct{
-  color: white;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
+  color: #00F500;
+  font-family: monospace;
+  font-size: 18px;
   padding-top: 100px;
+}
+
+#win{
+  margin-left: 420px;
+  color: #00F500;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+#nextLink{
+  margin-left: 600px;
+  color: #00F500;
+  font-size: 30px;
+  font-family: monospace;
 }
