@@ -12,7 +12,7 @@
 //   localStorage.userName = userName;
 // };
 
-var pageLink = 'rpg1.html'; //insert link for quiz completion
+var pageLink = 'casino.html'; //insert link for quiz completion
 
 var incorrectNumber = 0; //number of incorrect answers
 
@@ -69,7 +69,8 @@ function handleClick(event) {
   } else if (event.target.id === 'correctAnswerThree') {
     confirm('Congratulations. You made it to the final question. The next question is worth all the marbles. Answer carefully...');
     questionFourEl();
-  } else if (event.target.id === 'image1', 'image2', 'image3') {
+  } else if (event.target.id === 'image1') {
+    confirm('Wow... someone is playing favorites.');
     questionsWrong();
     location.href = pageLink;
   } else {
