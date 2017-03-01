@@ -49,9 +49,10 @@ var questionsWrong = function () {
   if (incorrectNumber < 2) {
     confirm('you passed');
   } else if (incorrectNumber > 2 && incorrectNumber < 4) {
-    confirm('you passed. BARELY!');
+    confirm('you got ' + incorrectNumber + '.' + ' you pass... BARELY!');
   } else {
     confirm('You got ' + incorrectNumber + ' wrong.  YOU FAIL!!');
+    confirm('You can move on this time.  Dont expect to be so lucky!');
   }
 };
 
@@ -62,17 +63,26 @@ function handleClick(event) {
 
   console.log(event.target);
 
+    // question one
   if (event.target.id === 'correctAnswerOne') {
     questionTwoEl();
+
+    // question two
   } else if (event.target.id === 'correctAnswerTwo') {
     questionThreeEl();
+
+    // question three
   } else if (event.target.id === 'correctAnswerThree') {
     confirm('Congratulations. You made it to the final question. The next question is worth all the marbles. Answer carefully...');
     questionFourEl();
+
+    // question four - images
   } else if (event.target.id === 'image1') {
     confirm('Wow... someone is playing favorites.');
     questionsWrong();
     location.href = pageLink;
+
+    // incorrect answer
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
@@ -80,7 +90,12 @@ function handleClick(event) {
   }
 };
 
-// for each question, correct and incorrect answers need to be called, and replaced for every question.
+var tester = function() {
+  var imageEl = document.getElementById('firstImage');
+  imageEl.textContent = 'TESTING';
+};
+
+// correct and incorrect answers need to be called, and replaced (by ID) for every question.
 
 // Question One
 var questionOneEl = function() {
@@ -168,6 +183,12 @@ var questionThreeEl = function() {
  // Question Four
 
 var questionFourEl = function() {
+  // delete right side image
+  document.getElementById('firstImage').remove();
+
+  var changeTableEl = document.getElementById('possibleAnswers');
+  changeTableEl.setAttribute('id', 'questionFourTable');
+
   var questionEl = document.getElementById('question');
   question.textContent = questionFour;
 
@@ -202,5 +223,9 @@ var questionFourEl = function() {
   console.log(incorrectNumber);
 
 };
+
+tester();
+
+confirm('You wake up... classroom is empty... you need to find a way out of here.');
 
 questionOneEl();
