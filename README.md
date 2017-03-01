@@ -15,6 +15,12 @@ Project week code 201 - Carlo, Kevin, Saul, Mike
 * I want the user to win when three images have the same array index
 * I want to display the link to the next level when the user wins
 
+#User Story for Math Challenge:
+
+##User Stories:
+* As a user I want to solve math based questions to move on to the next level
+* As a user I want to have a page that is easy to understand with minimal extras
+* As a user I want to know if my answer was right or not
 
 Developer
 
