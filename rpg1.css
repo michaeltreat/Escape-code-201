@@ -2,6 +2,7 @@
 
 * {
   margin: 0px;
+  height: auto;
 }
 
 header img {
@@ -28,7 +29,18 @@ main {
 }
 
 ul {
+  display: inline;
   padding: 0px;
+  width: 600px;
+}
+
+li {
+  display: inline-block;
+  text-align: left;
+  padding-left: 50px;
+  width: 600px;
+  margin: 0px;
+  margin-top: 10px;
 }
 
 .listItem {
@@ -53,6 +65,13 @@ ul {
   cursor: pointer;
 }
 
+#firstImage {
+  margin-right: 100px;
+  float: right;
+  width: 450px;
+  height: 350px;
+}
+
 footer {
   background-color: black;
 }
@@ -67,19 +86,43 @@ footer {
 }
 
 #image1 {
+  align-items: center;
   margin: 10px;
   display: inline;
   width: 300px;
 }
 
 #image2 {
+  align-items: center;
   margin: 10px;
   display: inline;
   width: 300px;
 }
 
 #image3 {
+  align-items: center;
   margin: 10px;
   display: inline;
   width: 300px;
+}
+
+.hoverTable{
+	width:100%;
+	border-collapse:collapse;
+}
+
+/*background color - nonhighlighted*/
+	.hoverTable li{
+	background: black;
+}
+
+/*highlighted background/text color*/
+  .hoverTable li:hover {
+  color: black;
+  background-color: white;
+}
+
+#questionFourTable {
+  display: block;
+  width: 100%;
 }
