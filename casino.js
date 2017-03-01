@@ -61,16 +61,20 @@ function handleClick(event){
   leverClicks++;
   console.log(leverClicks);
   drawThree();
-  console.log('handleClick left ', slotLeft);
-  console.log('handleClick center ', slotCenter);
-  console.log('handleClick right ', slotRight);
   if (slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter) {
     var paragraghEl = document.getElementById('win');
-    var winMessage = 'You Win! You spent ' + (leverClicks * 100) + ' dollars to get this link';
+    var winMessage = 'You Win! ' + userName + ', you spent ' + (leverClicks * 100) + ' dollars to get this link...ouch.';
+    //local storage
+    localStorage.moneySpent = JSON.stringify(leverClicks);
+    console.log(localStorage.moneySpent);
+
+    //paragraph element for win message
     paragraghEl.textContent = winMessage;
+
+    //a tag element for link to next page
     var linkEl = document.getElementById('nextLink');
     linkEl.textContent = 'Next Stage';
-    linkEl.href = 'last-page.html';
+    linkEl.href = 'debugger.html';
     leverEl.removeEventListener('click', handleClick);
     console.log(linkEl);
     console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
