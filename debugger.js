@@ -1,5 +1,7 @@
 'use strict';
 
+console.log('step one : Fix audio');
+
 var links = [
   'assets/RanGGuup.mp4',
   'assets/itsonlyagame.mp4',
@@ -11,7 +13,7 @@ function youAreGettingCloser(x,y,z){
 
     console.log('success');
 }
-youAreGettingCloser( 1,1,1);
+youAreGettingCloser( 0,0,0);
 
 function runCharts(){
   var ctx = document.getElementById('current-chart').getContext('2d');
