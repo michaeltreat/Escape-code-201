@@ -15,7 +15,10 @@ header {
   height: 135px;
   position: fixed;
 }
-
+.title{
+  text-align: center;
+  padding: 25px;
+}
 main {
   /*background-image: url(assets/escapeBackground.jpg);*/
   background-color: black;
