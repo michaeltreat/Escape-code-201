@@ -37,10 +37,10 @@ var answerThreeIncorrectOne = '333333 incorrect answer one33333';
 var answerThreeIncorrectTwo = '333333 incorrect answer two33333';
 
 // Question Four Variable
-var questionFour = 'Question Four';
-var answerFour = 'answer four';
-var answerFourPicOne = 'assets/hellokitty.jpg';
-var answerFourPicTwo = 'assets/hellokitty.jpg';
+var questionFour = 'Who is the best TA?';
+var answerFour = 'Who is the best TA?';
+var answerFourPicOne = 'assets/tracey.JPG';
+var answerFourPicTwo = 'assets/frazier.jpg';
 var answerFourPicThree = 'assets/hellokitty.jpg';
 
 // total questions wrong and messages
