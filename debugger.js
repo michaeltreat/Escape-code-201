@@ -76,7 +76,7 @@ function pickVideoUrl(){
 }
 
 function showLinkAlpha(x){
-  if(!isNAN(x)){
+  if(!isNaN(x)){
     alert('Awesome. You have won as contestent zero! ( History fighing game Easter Egg). GAME OVER MAN! GAME OVER!');
     location.href = 'about-us.html';
   }else{
