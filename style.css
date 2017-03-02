@@ -58,12 +58,16 @@ footer {
   font-size: 25px;
 }
 
-
 @import "compass/css3";
 
 body{
-  background:black;
+  background-color: black;
   font-family: 'Varela', sans-serif;
+  text-align: center;
+  padding-left: 25%;
+}
+.main{
+  background-color: black;
 }
 
 .glitch{
