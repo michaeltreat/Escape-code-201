@@ -1,16 +1,14 @@
 'use strict';
 
-// changing for changings sake
+var userName;
 
-// var userName;
-//
-// if(localStorage.userName){
-//   console.log(localStorage.userName);
-//   userName = JSON.parse(localStorage.userName);
-// }else{
-//   userName = prompt('Hmmmm looks like we forgot your name. What was it again?');
-//   localStorage.userName = userName;
-// };
+if(localStorage.userName){
+  console.log(localStorage.userName);
+  userName = JSON.parse(localStorage.userName);
+}else{
+  userName = prompt('Hmmmm looks like we forgot your name. What was it again?');
+  localStorage.userName = userName;
+};
 
 var pageLink = 'casino.html'; //insert link for quiz completion
 
@@ -85,6 +83,7 @@ function handleClick(event) {
   } else if (event.target.id === 'image3') {
     confirm('umm... okkay?  I guess?');
     location.href = pageLink;
+    questionsWrong();
     // incorrect answer
   } else {
     incorrectNumber++;
