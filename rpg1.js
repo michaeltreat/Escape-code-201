@@ -32,7 +32,7 @@ var answerTwoIncorrectOne = '#myStuff';
 var answerTwoIncorrectTwo = 'class.myStuff';
 
 // Question Three Variable
-var questionThree = 'Why so JavaScript and Java have similar names?';
+var questionThree = 'Why do JavaScript and Java have similar names?';
 var answerThree = 'JavaScript\'s syntax is loosely based on Java\'s';
 var answerThreeIncorrectOne = 'JavaScript is a stripped-down version of Java';
 var answerThreeIncorrectTwo = 'They both originated on the island of Java';
@@ -71,8 +71,7 @@ function handleClick(event) {
   } else if (event.target.id === 'correctAnswerTwo') {
     questionThreeEl();
     // question three
-  } else if (event.target.id === 'correctAnswerThree') {
-    confirm('Congratulations. You made it to the final question. The next question is worth all the marbles. Answer carefully...');
+  } else if (event.target.id === 'questionThreeCorrectAnswerThree') {
     questionFourEl();
     // question four - images
   } else if (event.target.id === 'image1') {
@@ -90,7 +89,7 @@ function handleClick(event) {
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
-    confirm('You got it wrong! You have gotten ' + incorrectNumber + ' incorrect. Pick again.');
+    confirm('You got it wrong! You have accumulated ' + incorrectNumber + ' incorrect answers. Pick again.');
   }
 };
 
@@ -103,9 +102,12 @@ var addPic = function() {
 // correct and incorrect answers need to be called, and replaced (by ID) for every question.
 
 // Question One
-confirm('You wake up... classroom is empty... you need to find a way out of here.');
-
 var questionOneEl = function() {
+
+  confirm('You wake up... classroom is empty... you need to find a way out of here.');
+
+  confirm('As you make your way to the door your ambushed by Tina Fey\'s shorter sister.  She demands you answer a coding question to proceed.');
+
   var questionEl = document.getElementById('question');
   question.textContent = questionOne;
 
@@ -130,8 +132,12 @@ var questionOneEl = function() {
 };
 
 // Question Two
-
 var questionTwoEl = function() {
+
+  confirm('You escape her deadly trap and dart towards the door.');
+
+  confirm('Out of nowhere a red haired coding goblin emerges from under the table.  He demands payment in the form of Subway gift cards or the answer to a CSS question he has been unable to solve for many moons.');
+
   var imageEl = document.getElementById('firstImage');
   imageEl.setAttribute('src', 'assets/frazierreal.jpg');
   imageEl.textContent = 'TESTING';
@@ -162,6 +168,11 @@ var questionTwoEl = function() {
 // Question Three
 
 var questionThreeEl = function() {
+
+  confirm('Finally free from the goblin\'s grasp, you get a running start and shoulder roll into a perfectly executed double Salchow reminiscent of Kristi Yamaguchi circa 1991\'s World Figure Skating Championships.');
+
+  confirm('The end is near. You can feel it. As you approach the door a shadowy figure appears.  He demands you answer another question.');
+
   var questionEl = document.getElementById('question');
   question.textContent = questionThree;
 
@@ -194,6 +205,9 @@ var questionThreeEl = function() {
  // Question Four
 
 var questionFourEl = function() {
+
+  confirm('You have passed all tests. All your conquored foes unite and meet you at the exit. You have made it to the final question. Answer correctly and you will be set free and able to start your Code 301 adventure (coming Spring 2017). Answer carefully...');
+
   // delete right side image
   document.getElementById('firstImage').remove();
 
