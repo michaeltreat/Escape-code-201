@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Debugger</title>
     <link rel="stylesheet" href="debugger.css">
@@ -9,10 +9,23 @@
     <link
   </head>
   <body>
+    <header>
+      <img src="assets/title-bar.jpg" alt="Title Bar">
+    </header>
+    <p id="pagebreak">PAGEBREAK</p>
     <div class="title-svg">
-      <img src="assets/debugger.svg">
+      <img src="assets/debugger.svg"> <br> <br>
+
+      <h2>It's all up to you now...</h2>
     </div>
-    <audio src="assets/badguy2.mp3"></audio>
+    <div class="content">
+
+    <div class="audio-form">
+
+      <div id='audio-container'>
+        <h4>Audio</h4>
+        <audio src="assets/badguy2.mp3"></audio>
+      </div>
     <div class="function-form">
       <form id="form">
         <fieldset>
@@ -23,12 +36,16 @@
         </fieldset>
       </form>
     </div>
+  </div>
+    <div id="video-container">
+      <h4>Video</h4>
+      <iframe src=""></iframe>
+    </div>
+  </div>
 
-    <canvas id="current-chart"></canvas>
-    <h2>It's all up to you now...</h2>
-    <iframe src=""></iframe>
 
-    <a href="about-us.html">About us page</a>
+
+   <a href="about-us.html">About us page</a>
     <script src="local-storage.js"></script>
     <script src="debugger.js"></script>
   </body>
