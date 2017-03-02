@@ -40,26 +40,25 @@ li {
   padding-left: 50px;
   width: 600px;
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .listItem {
-  font-size: 50px;
+  font-size: 20px;
   text-align: left;
 }
 
 #question {
-  font-size: 45px;
+  font-size: 20px;
   font-family: 'Share Tech Mono', monospace;
   color: white;
-  text-align: center;
   padding-top: 80px;
  }
 
 #possibleAnswers {
   font-family: 'Share Tech Mono', monospace;
   color: white;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
   list-style: none;
   cursor: pointer;
@@ -86,15 +85,15 @@ footer {
 }
 
 #questionThreeIncorrectAnswerOne {
-  font-size: 35px;
+  font-size: 20px;
 }
 
 #questionThreeIncorrectAnswerTwo {
-  font-size: 35px;
+  font-size: 20px;
 }
 
 #questionThreeCorrectAnswerThree {
-  font-size: 35px;
+  font-size: 20px;
 }
 
 #image1 {
