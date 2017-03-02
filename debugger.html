@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="debugger.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-    <link
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'></script>
   </head>
   <body>
     <div class="title-svg">
       <img src="assets/debugger.svg">
+      <h2>It's all up to you now...</h2>
     </div>
-    <audio src="assets/badguy2.mp3"></audio>
+
+
+    <div id='audio-container'>
+      <h4>Audio</h4>
+      <audio src="assets/badguy2.mp3"></audio>
+    </div>
+
     <div class="function-form">
       <form id="form">
         <fieldset>
@@ -24,11 +31,10 @@
       </form>
     </div>
 
-    <canvas id="current-chart"></canvas>
-    <h2>It's all up to you now...</h2>
-    <iframe src=""></iframe>
-
-    <a href="about-us.html">About us page</a>
+    <div id="video-container">
+      <h4>Video</h4>
+      <iframe></iframe>
+    </div>
     <script src="local-storage.js"></script>
     <script src="debugger.js"></script>
   </body>

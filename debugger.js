@@ -8,6 +8,9 @@ var links = [
   'assets/itsonlyagame.mp4',
   'assets/NOTjcbis.webm'
 ];
+function generateRandomNumber(){
+  return Math.floor(Math.random() * 100);
+}
 var formEl = document.getElementById('form');
 
 formEl.addEventListener('submit', handleData);
@@ -27,6 +30,8 @@ function handleData(event){
     // console.log(userInput);
     checkLocalStorage();
     youAreGettingCloser(usersAnswer);
+    localStorage.secretNumber = JSON.stringify(generateRandomNumber());
+
   }
 };
 
@@ -41,42 +46,41 @@ function checkLocalStorage(){
     localStorage.moneySpent = JSON.stringify(837);
   }
 }
+
 function youAreGettingCloser(userInput){
   uniqueCode = moneySpent * userName.length;
   if(uniqueCode === userInput){
-    console.log('Great. Now it is time to fix the video');
+    console.log('Great, that definetely worked. Now it is time to fix the video. This may help you: putVideoUrlTogether(uniqueCode,secretLocalStorageNumber)');
+
   }else{
-    console.log('Sorry, that is incorrect. Try again!;');
+    console.log('Sure... That kinda sounds right I guess. Next step is to fix the video! This may help you: pickVideoUrl()');
   }
 }
 
-function runCharts(){
-  var ctx = document.getElementById('current-chart').getContext('2d');
+function putVideoUrlTogether(x,y){
+  var secretLocalStorageNumber = JSON.parse(localStorage.secretNumber);
+  var videoCode = uniqueCode + secretLocalStorageNumber;
+  var funcParas = x + y;
+  if(videoCode = funcParas){
+    console.log('You found the one true link. assets/tempName.mp3');
+  }else{
+    console.log('You were so close. Check localStorage for a hint. Try calling this function again with but use different numbers.');
+  }
 
-  var chartData = {
-    type:'bar',
-    data:{
-      labels: names,
-      datasets:[{
-        label:'# of Votes',
-        data: cumulativeClicks,
-        backgroundColor : 'blue'
-      },
-      {
-        label:'# of Views',
-        data: cumulativeViews,
-        backgroundColor : 'red'
-      }]
-    },
-    options:{
-      scales:{
-        yAxes:[{
-          ticks:{
-            beginAtZero: true
-          }
-        }]
-      }
-    }
-  };
-  var myChart = new Chart(ctx, chartData);
+}
+
+function pickVideoUrl(){
+  var index = Math.floor(Math.random() * links.length);
+  var link = links[index];
+  console.log('Try this one:' , link);
+}
+
+function showLinkAlpha(x){
+  if(!isNAN(x)){
+    alert('Awesome. You have won as contestent zero! ( History fighing game Easter Egg). GAME OVER MAN! GAME OVER!');
+    location.href = 'about-us.html';
+  }else{
+    alert('wow. You got this far and still screwed up? You must have been cheating! AGAIN!');
+    location.href = 'index.html';
+  }
 }
