@@ -8,7 +8,7 @@ formEl.addEventListener('submit', sendToNextPage);
 function sendToNextPage(event) {
   event.stopPropagation();
   event.preventDefault();
-  alert('Congrats ' + userName + ' you did it. On to the next level. Good luck!');
+  alert('Congrats ' + userName + ' you are the proud owner of our DLC. On to the next level. Good luck, you need it!');
   location.href = 'debugger.html';
   // location.href = 'about.html';
 }
