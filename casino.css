@@ -34,7 +34,7 @@ main {
 }
 
 #lever {
-  height: 80%;
+  height: 100%;
   display: inline-block;
 
 }
@@ -52,7 +52,7 @@ main {
   width: 100px;
   position: absolute;
   top: 31%;
-  left: 17.5%;
+  left: 16%;
 
 
 }
@@ -62,7 +62,7 @@ main {
   width: 100px;
   position: absolute;
   top: 31%;
-  left: 63%;
+  left: 61.5%;
 }
 
 #center{
@@ -70,7 +70,7 @@ main {
   width: 100px;
   position: absolute;
   top: 31%;
-  left: 40.5%;
+  left: 39.5%;
 }
 
 @import "compass/css3";
