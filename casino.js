@@ -66,7 +66,7 @@ function handleClick(event){
     var paragraghEl = document.getElementById('win');
     var winMessage = 'You Win! ' + userName + ', you spent ' + (leverClicks * 76) + ' dollars to get this link...ouch.';
     //local storage
-    localStorage.moneySpent = JSON.stringify(leverClicks);
+    localStorage.moneySpent = JSON.stringify(leverClicks * 76);
     console.log(localStorage.moneySpent);
 
     //paragraph element for win message
@@ -83,7 +83,7 @@ function handleClick(event){
     var paragraghEl = document.getElementById('win');
     var winMessageTwo = userName + ', life gave you lemons. And those lemons cost ' + (leverClicks * 76) + ' dollars.';
     //local storage
-    localStorage.moneySpent = JSON.stringify(leverClicks);
+    localStorage.moneySpent = JSON.stringify(leverClicks * 76);
     console.log(localStorage.moneySpent);
 
     //paragraph element for win message
@@ -98,7 +98,7 @@ function handleClick(event){
     var paragraghEl = document.getElementById('win');
     var winMessageThree = userName + ', you shine bright like a diamond. A ' + (leverClicks * 76) + ' dollar diamond.';
     //local storage
-    localStorage.moneySpent = JSON.stringify(leverClicks);
+    localStorage.moneySpent = JSON.stringify(leverClicks * 76);
     console.log(localStorage.moneySpent);
 
     //paragraph element for win message
