@@ -19,25 +19,25 @@ var answerEl = document.getElementById('possibleAnswers'); //correct answer for 
 // Question One Variables
 var questionOneImage = 'assets/hellokitty.jpg';
 var questionOne = 'HTML is considered a _________ language.';
-var answerOne = 'markup';
-var answerOneIncorrectOne = 'foreign';
-var answerOneIncorrectTwo = 'programming';
+var answerOne = '1. markup';
+var answerOneIncorrectOne = '2. foreign';
+var answerOneIncorrectTwo = '3. programming';
 
 // Question Two Variables
 var questionTwo = 'I want to change to text color of all my elements with a class of myStuff.  I would use...';
-var answerTwo = '.myStuff';
-var answerTwoIncorrectOne = '#myStuff';
-var answerTwoIncorrectTwo = 'class.myStuff';
+var answerTwo = '2. .myStuff';
+var answerTwoIncorrectOne = '1. #myStuff';
+var answerTwoIncorrectTwo = '3. class.myStuff';
 
 // Question Three Variable
 var questionThree = 'Why do JavaScript and Java have similar names?';
-var answerThree = 'JavaScript\'s syntax is loosely based on Java\'s';
-var answerThreeIncorrectOne = 'JavaScript is a stripped-down version of Java';
-var answerThreeIncorrectTwo = 'They both originated on the island of Java';
+var answerThree = '3. JavaScript\'s syntax is loosely based on Java\'s';
+var answerThreeIncorrectOne = '1. JavaScript is a stripped-down version of Java';
+var answerThreeIncorrectTwo = '2. They both originated on the island of Java';
 
 // Question Four Variable
-var questionFour = 'Who is the best TA?';
-var answerFour = 'Who is the best TA?';
+var questionFour = 'Who is the best Code 201 TA?';
+var answerFour = 'Who is the best Code 201 TA?';
 var answerFourPicOne = 'assets/tracey.jpg';
 var answerFourPicTwo = 'assets/frazier.jpg';
 var answerFourPicThree = 'assets/ben.jpg';
@@ -78,11 +78,11 @@ function handleClick(event) {
     questionsWrong();
     location.href = pageLink;
   } else if (event.target.id === 'image2') {
-    confirm('Really? Wouldnt have guess that.');
+    confirm('Really? Wonder what the others think about that.');
     questionsWrong();
     location.href = pageLink;
   } else if (event.target.id === 'image3') {
-    confirm('umm... okkay?  I guess?');
+    confirm('We are all about unity at Code Fellows. Not Jerks.');
     location.href = pageLink;
     questionsWrong();
     // incorrect answer
