@@ -41,6 +41,7 @@ var answerFour = 'Who is the best TA?';
 var answerFourPicOne = 'assets/tracey.jpg';
 var answerFourPicTwo = 'assets/frazier.jpg';
 var answerFourPicThree = 'assets/ben.jpg';
+var answerFourPicFour = 'assets/JB.jpg';
 
 // total questions wrong and messages
 
@@ -249,6 +250,13 @@ var questionFourEl = function() {
   questionFourAnswerThreeEl.addEventListener('click', handleClick);
 
   console.log(incorrectNumber);
+
+  var questionFourAnswerFourEl = document.createElement('img');
+  questionFourAnswerFourEl.setAttribute('src', answerFourPicFour);
+  questionFourAnswerFourEl.setAttribute('id', 'image3');
+  answerEl.appendChild(questionFourAnswerFourEl);
+  questionFourAnswerFourEl.textContent = answerFour;
+  questionFourAnswerFourEl.addEventListener('click', handleClick);
 
 };
 
