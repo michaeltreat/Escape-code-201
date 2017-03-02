@@ -90,7 +90,7 @@ function handleClick(event) {
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
-    confirm('You got it wrong! You have gotten ' + incorrectNumber + ' incorrect. Pick again');
+    confirm('You got it wrong! You have gotten ' + incorrectNumber + ' incorrect. Pick again.');
   }
 };
 
