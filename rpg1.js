@@ -67,16 +67,13 @@ function handleClick(event) {
     // question one
   if (event.target.id === 'correctAnswerOne') {
     questionTwoEl();
-
     // question two
   } else if (event.target.id === 'correctAnswerTwo') {
     questionThreeEl();
-
     // question three
   } else if (event.target.id === 'correctAnswerThree') {
     confirm('Congratulations. You made it to the final question. The next question is worth all the marbles. Answer carefully...');
     questionFourEl();
-
     // question four - images
   } else if (event.target.id === 'image1') {
     confirm('Wow... someone is playing favorites.');
@@ -93,7 +90,7 @@ function handleClick(event) {
 
 var addPic = function() {
   var imageEl = document.getElementById('firstImage');
-  imageEl.setAttribute('src', 'assets/tracey.JPG');
+  imageEl.setAttribute('src', 'assets/traceybobaseybananafanafofacey.JPG');
   imageEl.textContent = 'TESTING';
 };
 
