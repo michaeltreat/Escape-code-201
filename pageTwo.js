@@ -12,4 +12,4 @@ while(userName.length < 1){
 
 alert('Thanks ' + userName + '. Good luck...');
 localStorage.userName = JSON.stringify(userName);
-console.log(localStorage.userName);
+// console.log(localStorage.userName);
