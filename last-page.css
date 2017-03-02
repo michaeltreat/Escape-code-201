@@ -13,6 +13,10 @@ header {
   height: 135px;
   position: fixed;
 }
+.text{
+  text-align: center;
+  padding: 40px;
+}
 
 main {
   /*background-image: url(assets/escapeBackground.jpg);*/
@@ -20,6 +24,7 @@ main {
   background-size: 100%;
   width: 100%;
   height: 1200px;
+    color: #00F500;
 }
 
 /*space behind title bar*/
@@ -27,7 +32,13 @@ main {
   height: 135px;
 
 }
-
+body{
+  font-family: monospace;
+  color: #00F500;
+}
+code{
+  border: 5px solid #00F500;
+}
 h4{
   text-align: center;
   margin-bottom: 5%;
@@ -38,13 +49,15 @@ h4{
 form{
   text-align: center;
   margin-left: 15%;
-  color: white;
+    color: #00F500;
 }
 fieldset{
   max-width: 408px;
   max-height: 287px;
   min-width: 408px;
   min-height: 287px;
+  border: 3px solid #00F500;
+
 }
 
 .image{
@@ -57,4 +70,22 @@ fieldset{
   min-height: 287px;
   padding-top: 9px;
   padding-bottom: -3px;
+}
+h1{
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+}
+
+/*//glitch stuff*/
+
+svg{
+  width: 600px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: black;
+
 }
