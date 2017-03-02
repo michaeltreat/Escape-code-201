@@ -1,5 +1,9 @@
 /*make sure assets folder is in the same directory as index.html, style.css, and app.js.  Rename as necessary // changing for changings sake*/
-
+.title{
+  text-align: center;
+  background-color: black;
+  padding-left: 20%;
+}
 * {
   margin: 0px;
   height: auto;
