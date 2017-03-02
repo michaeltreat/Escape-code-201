@@ -94,8 +94,6 @@ function handleClick(event){
     linkEl.textContent = 'Next Stage';
     linkEl.href = 'last-page.html';
     leverEl.removeEventListener('click', handleClick);
-    console.log(linkEl);
-    console.log('you win! you spent ' + (leverClicks * 76) + ' dollars');
   }else if(slotLeft === 2 && slotCenter === 2 && slotRight === 2){
     var paragraghEl = document.getElementById('win');
     var winMessageThree = userName + ', you shine bright like a diamond. A ' + (leverClicks * 76) + ' dollar diamond.';
@@ -111,9 +109,5 @@ function handleClick(event){
     linkEl.textContent = 'Next Stage';
     linkEl.href = 'last-page.html';
     leverEl.removeEventListener('click', handleClick);
-    console.log(linkEl);
-    console.log('you win! you spent ' + (leverClicks * 100) + ' dollars');
   }
 };
-
-//slotLeft === slotRight && slotLeft === slotCenter && slotRight === slotCenter
