@@ -32,7 +32,7 @@ var answerTwoIncorrectOne = '#myStuff';
 var answerTwoIncorrectTwo = 'class.myStuff';
 
 // Question Three Variable
-var questionThree = 'Why so JavaScript and Java have similar names?';
+var questionThree = 'Why do JavaScript and Java have similar names?';
 var answerThree = 'JavaScript\'s syntax is loosely based on Java\'s';
 var answerThreeIncorrectOne = 'JavaScript is a stripped-down version of Java';
 var answerThreeIncorrectTwo = 'They both originated on the island of Java';
@@ -71,35 +71,43 @@ function handleClick(event) {
   } else if (event.target.id === 'correctAnswerTwo') {
     questionThreeEl();
     // question three
-  } else if (event.target.id === 'correctAnswerThree') {
-    confirm('Congratulations. You made it to the final question. The next question is worth all the marbles. Answer carefully...');
+  } else if (event.target.id === 'questionThreeCorrectAnswerThree') {
     questionFourEl();
     // question four - images
   } else if (event.target.id === 'image1') {
     confirm('Wow... someone is playing favorites.');
     questionsWrong();
     location.href = pageLink;
-
+  } else if (event.target.id === 'image2') {
+    confirm('Really? Wouldnt have guess that.');
+    questionsWrong();
+    location.href = pageLink;
+  } else if (event.target.id === 'image3') {
+    confirm('umm... okkay?  I guess?');
+    location.href = pageLink;
     // incorrect answer
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
-    confirm('You got it wrong! Pick again');
+    confirm('You got it wrong! You have accumulated ' + incorrectNumber + ' incorrect answers. Pick again.');
   }
 };
 
 var addPic = function() {
   var imageEl = document.getElementById('firstImage');
   imageEl.setAttribute('src', 'assets/traceybobaseybananafanafofacey.JPG');
-  imageEl.textContent = 'TESTING';
+  imageEl.textContent = 'IMAGE';
 };
 
 // correct and incorrect answers need to be called, and replaced (by ID) for every question.
 
 // Question One
-confirm('You wake up... classroom is empty... you need to find a way out of here.');
-
 var questionOneEl = function() {
+
+  confirm('You wake up... classroom is empty... you need to find a way out of here.');
+
+  confirm('As you make your way to the door your ambushed by Tina Fey\'s shorter sister.  She demands you answer a coding question to proceed.');
+
   var questionEl = document.getElementById('question');
   question.textContent = questionOne;
 
@@ -124,8 +132,12 @@ var questionOneEl = function() {
 };
 
 // Question Two
-
 var questionTwoEl = function() {
+
+  confirm('You escape her deadly trap and dart towards the door.');
+
+  confirm('Out of nowhere a red haired coding goblin emerges from under the table.  He demands payment in the form of Subway gift cards or the answer to a CSS question he has been unable to solve for many moons.');
+
   var imageEl = document.getElementById('firstImage');
   imageEl.setAttribute('src', 'assets/frazierreal.jpg');
   imageEl.textContent = 'TESTING';
@@ -156,11 +168,16 @@ var questionTwoEl = function() {
 // Question Three
 
 var questionThreeEl = function() {
+
+  confirm('Finally free from the goblin\'s grasp, you get a running start and shoulder roll into a perfectly executed double Salchow reminiscent of Kristi Yamaguchi circa 1991\'s World Figure Skating Championships.');
+
+  confirm('The end is near. You can feel it. As you approach the door a shadowy figure appears.  He demands you answer another question.');
+
   var questionEl = document.getElementById('question');
   question.textContent = questionThree;
 
   var questionThreeAnswerOneEl = document.getElementById('incorrectAnswerTwo');
-  questionThreeAnswerOneEl.setAttribute('id', 'incorrectAnswerOne');
+  questionThreeAnswerOneEl.setAttribute('id', 'questionThreeIncorrectAnswerOne');
   answerEl.appendChild(questionThreeAnswerOneEl);
   questionThreeAnswerOneEl.textContent = answerThreeIncorrectOne;
   questionThreeAnswerOneEl.addEventListener('click', handleClick);
@@ -168,7 +185,7 @@ var questionThreeEl = function() {
   console.log(incorrectNumber);
 
   var questionThreeAnswerTwoEl = document.getElementById('incorrectAnswerOne');
-  questionThreeAnswerTwoEl.setAttribute('id', 'incorrectAnswerTwo');
+  questionThreeAnswerTwoEl.setAttribute('id', 'questionThreeIncorrectAnswerTwo');
   answerEl.appendChild(questionThreeAnswerTwoEl);
   questionThreeAnswerTwoEl.textContent = answerThreeIncorrectTwo;
   questionThreeAnswerTwoEl.addEventListener('click', handleClick);
@@ -176,7 +193,7 @@ var questionThreeEl = function() {
   console.log(incorrectNumber);
 
   var questionThreeAnswerThreeEl = document.getElementById('correctAnswerTwo');
-  questionThreeAnswerThreeEl.setAttribute('id', 'correctAnswerThree');
+  questionThreeAnswerThreeEl.setAttribute('id', 'questionThreeCorrectAnswerThree');
   answerEl.appendChild(questionThreeAnswerThreeEl);
   questionThreeAnswerThreeEl.textContent = answerThree;
   questionThreeAnswerThreeEl.addEventListener('click', handleClick);
@@ -188,6 +205,9 @@ var questionThreeEl = function() {
  // Question Four
 
 var questionFourEl = function() {
+
+  confirm('You have passed all tests. All your conquored foes unite and meet you at the exit. You have made it to the final question. Answer correctly and you will be set free and able to start your Code 301 adventure (coming Spring 2017). Answer carefully...');
+
   // delete right side image
   document.getElementById('firstImage').remove();
 
@@ -198,7 +218,7 @@ var questionFourEl = function() {
   question.textContent = questionFour;
 
   var questionFourAnswerOneEl = document.createElement('img');
-  document.getElementById('incorrectAnswerTwo').remove();
+  document.getElementById('questionThreeIncorrectAnswerTwo').remove();
   questionFourAnswerOneEl.setAttribute('src', answerFourPicOne);
   questionFourAnswerOneEl.setAttribute('id', 'image1');
   answerEl.appendChild(questionFourAnswerOneEl);
@@ -208,7 +228,7 @@ var questionFourEl = function() {
   console.log(incorrectNumber);
 
   var questionFourAnswerTwoEl = document.createElement('img');
-  document.getElementById('incorrectAnswerOne').remove();
+  document.getElementById('questionThreeIncorrectAnswerOne').remove();
   questionFourAnswerTwoEl.setAttribute('src', answerFourPicTwo);
   questionFourAnswerTwoEl.setAttribute('id', 'image2');
   answerEl.appendChild(questionFourAnswerTwoEl);
@@ -218,7 +238,7 @@ var questionFourEl = function() {
   console.log(incorrectNumber);
 
   var questionFourAnswerThreeEl = document.createElement('img');
-  document.getElementById('correctAnswerThree').remove();
+  document.getElementById('questionThreeCorrectAnswerThree').remove();
   questionFourAnswerThreeEl.setAttribute('src', answerFourPicThree);
   questionFourAnswerThreeEl.setAttribute('id', 'image3');
   answerEl.appendChild(questionFourAnswerThreeEl);
