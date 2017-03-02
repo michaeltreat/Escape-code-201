@@ -79,19 +79,25 @@ function handleClick(event) {
     confirm('Wow... someone is playing favorites.');
     questionsWrong();
     location.href = pageLink;
-
+  } else if (event.target.id === 'image2') {
+    confirm('Really? Wouldnt have guess that.');
+    questionsWrong();
+    location.href = pageLink;
+  } else if (event.target.id === 'image3') {
+    confirm('umm... okkay?  I guess?');
+    location.href = pageLink;
     // incorrect answer
   } else {
     incorrectNumber++;
     console.log(incorrectNumber);
-    confirm('You got it wrong! Pick again');
+    confirm('You got it wrong! You have gotten ' + incorrectNumber + ' incorrect. Pick again.');
   }
 };
 
 var addPic = function() {
   var imageEl = document.getElementById('firstImage');
   imageEl.setAttribute('src', 'assets/traceybobaseybananafanafofacey.JPG');
-  imageEl.textContent = 'TESTING';
+  imageEl.textContent = 'IMAGE';
 };
 
 // correct and incorrect answers need to be called, and replaced (by ID) for every question.
@@ -160,7 +166,7 @@ var questionThreeEl = function() {
   question.textContent = questionThree;
 
   var questionThreeAnswerOneEl = document.getElementById('incorrectAnswerTwo');
-  questionThreeAnswerOneEl.setAttribute('id', 'incorrectAnswerOne');
+  questionThreeAnswerOneEl.setAttribute('id', 'questionThreeIncorrectAnswerOne');
   answerEl.appendChild(questionThreeAnswerOneEl);
   questionThreeAnswerOneEl.textContent = answerThreeIncorrectOne;
   questionThreeAnswerOneEl.addEventListener('click', handleClick);
@@ -168,7 +174,7 @@ var questionThreeEl = function() {
   console.log(incorrectNumber);
 
   var questionThreeAnswerTwoEl = document.getElementById('incorrectAnswerOne');
-  questionThreeAnswerTwoEl.setAttribute('id', 'incorrectAnswerTwo');
+  questionThreeAnswerTwoEl.setAttribute('id', 'questionThreeIncorrectAnswerTwo');
   answerEl.appendChild(questionThreeAnswerTwoEl);
   questionThreeAnswerTwoEl.textContent = answerThreeIncorrectTwo;
   questionThreeAnswerTwoEl.addEventListener('click', handleClick);
@@ -176,7 +182,7 @@ var questionThreeEl = function() {
   console.log(incorrectNumber);
 
   var questionThreeAnswerThreeEl = document.getElementById('correctAnswerTwo');
-  questionThreeAnswerThreeEl.setAttribute('id', 'correctAnswerThree');
+  questionThreeAnswerThreeEl.setAttribute('id', 'questionThreeCorrectAnswerThree');
   answerEl.appendChild(questionThreeAnswerThreeEl);
   questionThreeAnswerThreeEl.textContent = answerThree;
   questionThreeAnswerThreeEl.addEventListener('click', handleClick);
@@ -198,7 +204,7 @@ var questionFourEl = function() {
   question.textContent = questionFour;
 
   var questionFourAnswerOneEl = document.createElement('img');
-  document.getElementById('incorrectAnswerTwo').remove();
+  document.getElementById('questionThreeIncorrectAnswerTwo').remove();
   questionFourAnswerOneEl.setAttribute('src', answerFourPicOne);
   questionFourAnswerOneEl.setAttribute('id', 'image1');
   answerEl.appendChild(questionFourAnswerOneEl);
@@ -208,7 +214,7 @@ var questionFourEl = function() {
   console.log(incorrectNumber);
 
   var questionFourAnswerTwoEl = document.createElement('img');
-  document.getElementById('incorrectAnswerOne').remove();
+  document.getElementById('questionThreeIncorrectAnswerOne').remove();
   questionFourAnswerTwoEl.setAttribute('src', answerFourPicTwo);
   questionFourAnswerTwoEl.setAttribute('id', 'image2');
   answerEl.appendChild(questionFourAnswerTwoEl);
@@ -218,7 +224,7 @@ var questionFourEl = function() {
   console.log(incorrectNumber);
 
   var questionFourAnswerThreeEl = document.createElement('img');
-  document.getElementById('correctAnswerThree').remove();
+  document.getElementById('questionThreeCorrectAnswerThree').remove();
   questionFourAnswerThreeEl.setAttribute('src', answerFourPicThree);
   questionFourAnswerThreeEl.setAttribute('id', 'image3');
   answerEl.appendChild(questionFourAnswerThreeEl);
