@@ -95,7 +95,7 @@ svg{
 }
 
 #instruct{
-  color: #00F500;
+  color: white;
   font-family: monospace;
   font-size: 30px;
   margin-top: 100px;
@@ -104,14 +104,14 @@ svg{
 #win{
   padding-top: 20px;
   margin: auto;
-  color: #00F500;
+  color: white;
   font-size: 20px;
   font-family: monospace;
 }
 
 #nextLink{
   margin: auto;
-  color: #00F500;
+  color: white;
   font-size: 30px;
   font-family: monospace;
 }

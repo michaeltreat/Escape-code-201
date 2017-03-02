@@ -3,12 +3,15 @@
 * {
   margin: 0px;
   font-family: monospace;
-  color: #00F500;
+  color: white;
 }
 
 header img {
   height: 135px;
   /*width: 2000px;*/
+}
+button{
+  color: black;
 }
 
 header {
@@ -18,6 +21,7 @@ header {
 .title{
   text-align: center;
   padding: 25px;
+  padding-right: 200px;;
 }
 main {
   /*background-image: url(assets/escapeBackground.jpg);*/
@@ -44,23 +48,30 @@ h2 , p{
   text-align: center;
   margin-bottom: 5%;
   padding-top: 1%;
-  color: #00F500;;
+  color: white;;
   max-width: 50%;
   margin: auto;
   font-family: monospace;
-  color: #00F500;
+  color: white;
 }
 body p{
   text-align: center;
   margin-bottom: 5%;
   padding-top: 1%;
-  color: #00F500;;
+  color: white;;
   max-width: 90%;
   margin: auto;
   display: block;
   font-family: monospace;
-  color: #00F500;
+  color: white;
 
+}
+#userInput{
+  color: black;
+}
+
+ #instructions{
+  font-size: 20px;;
 }
 
 
@@ -74,7 +85,6 @@ body p{
   margin-left: 5%;
   width: 75%;
   font-family: monospace;
-  color: #00F500;
   min-height: 270px;
   max-height: 270px;
 }
