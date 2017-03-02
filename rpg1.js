@@ -40,20 +40,20 @@ var answerThreeIncorrectTwo = 'They both originated on the island of Java';
 // Question Four Variable
 var questionFour = 'Who is the best TA?';
 var answerFour = 'Who is the best TA?';
-var answerFourPicOne = 'assets/hellokitty.jpg';
-var answerFourPicTwo = 'assets/hellokitty.jpg';
-var answerFourPicThree = 'assets/hellokitty.jpg';
+var answerFourPicOne = 'assets/tracey.jpg';
+var answerFourPicTwo = 'assets/frazier.jpg';
+var answerFourPicThree = 'assets/ben.jpg';
 
 // total questions wrong and messages
 
 var questionsWrong = function () {
-  if (incorrectNumber < 2) {
-    confirm('you passed');
-  } else if (incorrectNumber > 2 && incorrectNumber < 4) {
-    confirm('you got ' + incorrectNumber + '.' + ' you pass... BARELY!');
+  if (incorrectNumber <= 1) {
+    confirm('You passed. Proceed to Code 301!');
+  } else if (incorrectNumber === 2) {
+    confirm('You got ' + incorrectNumber + '.' + ' you pass... BARELY!');
   } else {
     confirm('You got ' + incorrectNumber + ' wrong.  YOU FAIL!!');
-    confirm('You can move on this time.  Dont expect to be so lucky!');
+    confirm('You can move on this time.  Dont expect to be so lucky in 301!');
   }
 };
 
@@ -95,7 +95,7 @@ function handleClick(event) {
 
 var addPic = function() {
   var imageEl = document.getElementById('firstImage');
-  imageEl.setAttribute('src', 'assets/traceybobaseybananafanafofacey.JPG');
+  imageEl.setAttribute('src', 'assets/traceyaxe.jpg');
   imageEl.textContent = 'IMAGE';
 };
 
@@ -106,7 +106,7 @@ var questionOneEl = function() {
 
   confirm('You wake up... classroom is empty... you need to find a way out of here.');
 
-  confirm('As you make your way to the door your ambushed by Tina Fey\'s shorter sister.  She demands you answer a coding question to proceed.');
+  confirm('As you make your way to the door your ambushed by Tina Fey\'s shorter cousin brandishing a battle axe.  She demands you answer a coding question to proceed.');
 
   var questionEl = document.getElementById('question');
   question.textContent = questionOne;
@@ -136,11 +136,11 @@ var questionTwoEl = function() {
 
   confirm('You escape her deadly trap and dart towards the door.');
 
-  confirm('Out of nowhere a red haired coding goblin emerges from under the table.  He demands payment in the form of Subway gift cards or the answer to a CSS question he has been unable to solve for many moons.');
+  confirm('Out of nowhere a coding goblin emerges from under the table.  He demands payment in the form of Subway gift cards or the answer to a CSS question he has been unable to solve for many moons.');
 
   var imageEl = document.getElementById('firstImage');
-  imageEl.setAttribute('src', 'assets/frazierreal.jpg');
-  imageEl.textContent = 'TESTING';
+  imageEl.setAttribute('src', 'assets/fraziergreen.jpg');
+  imageEl.textContent = 'IMAGE';
 
   var questionEl = document.getElementById('question');
   question.textContent = questionTwo;
@@ -171,7 +171,11 @@ var questionThreeEl = function() {
 
   confirm('Finally free from the goblin\'s grasp, you get a running start and shoulder roll into a perfectly executed double Salchow reminiscent of Kristi Yamaguchi circa 1991\'s World Figure Skating Championships.');
 
-  confirm('The end is near. You can feel it. As you approach the door a shadowy figure appears.  He demands you answer another question.');
+  confirm('The end is near. You can feel it. As you approach the door a monster comes bareling out of his lair. He demands you answer another question.');
+
+  var imageEl = document.getElementById('firstImage');
+  imageEl.setAttribute('src', 'assets/BENMONSTER.jpg');
+  imageEl.textContent = 'IMAGE';
 
   var questionEl = document.getElementById('question');
   question.textContent = questionThree;
