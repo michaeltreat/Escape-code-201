@@ -74,3 +74,13 @@ function pickVideoUrl(){
   var link = links[index];
   console.log('Try this one:' , link);
 }
+
+function showLinkAlpha(x){
+  if(!isNAN(x)){
+    alert('Awesome. You have won as contestent zero! ( History fighing game Easter Egg). GAME OVER MAN! GAME OVER!');
+    location.href = 'about-us.html';
+  }else{
+    alert('wow. You got this far and still screwed up? You must have been cheating! AGAIN!');
+    location.href = 'index.html';
+  }
+}
