@@ -4,7 +4,7 @@
 var userName;
 
 if(localStorage.userName){
-  console.log('the username in local storage is : ', localStorage.userName);
+  // console.log('the username in local storage is : ', localStorage.userName);
   userName = JSON.parse( localStorage.userName);
 }else{
   userName = prompt('Hmmmm looks like we forgot your name. What was it again?');
