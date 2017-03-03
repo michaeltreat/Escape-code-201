@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Math Challenge</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="math-challenge.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
@@ -20,15 +21,18 @@
 
     <div id= "riddle-container">
 
-    <p id="instructions">Please complete both the math problem and the riddle to get Variables X and Y. Then plug those into riddleMeThis(x, y)</p>
+    <p id="instructions">FIND VAR X || FIND VAR Y || COMPUTE riddleMeThis(X, Y); || SUBMIT OUTPUT</p>
     <p class="dashes">-----------------------</p>
+    <p id="stepOne">STEP 1</p>
     <p>1/2 of 4 = 3 <br>1/3 of 18 = 7 <br> 1/4 of 16 = 5 <br> 1/5 of 10 = VAR X? </p> <!-- var x = 3 -->
     <p class="dashes">-----------------------</p>
+    <p id="stepTwo">STEP 2</p>
     <p id="riddle">10 people stand in a circle in order 1 to 10. No. 1 has a CSS sword. He kills the next person (i.e. No. 2) and gives the sword to the next living person (i.e. No. 3). All people do the same until only 1 survives. Which unlucky person is stuck alive with the CSS Sword?
 <br>Answer = VAR Y?</p><br><br> <!-- var y = 5 -->
 </div>
   <div id='code-container'>
     <code>
+      <p id="stepThree">STEP 3</p><br>
       function riddleMeThis(x, y){ <br><br>
         &nbsp  if ( x < 20){<br>
           &nbsp  &nbsp var number = x + y;<br>
@@ -46,7 +50,8 @@
 <div class="form">
   <form id="answer-form" autocomplete="off">
     <fieldset>
-      <legend>Escape Code</legend><br>
+      <legend>Escape Code</legend>
+      <p id="stepFour">STEP 4</p> <br>
       <label for="userInput">riddleMeThis :</label><br>
       <input type="text" name="userInput" id= "userInput"><br><br>
       <button type="submit" >SUBMIT</button> <br>

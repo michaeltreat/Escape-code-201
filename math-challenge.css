@@ -23,6 +23,10 @@ header {
   padding: 25px;
   padding-right: 200px;;
 }
+code{
+  font-family: monospace;
+  color: white;
+}
 main {
   /*background-image: url(assets/escapeBackground.jpg);*/
   background-color: black;
@@ -92,7 +96,7 @@ body p{
   width: 100%;
 }
 #code-container{
-  border: 3px solid #00F500;;
+  border: 3px solid #00F500;
   width: 15%;
   float: right;
   margin-right: 3%;
@@ -112,4 +116,8 @@ fieldset{
   border: 3px solid #00F500;;
   padding: 1%;
   width: 100%;
+}
+#stepOne, #stepTwo, #stepThree, #stepFour{
+  color: #00F500;
+  font-size: 18px;
 }
